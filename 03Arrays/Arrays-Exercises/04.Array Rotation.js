@@ -1,7 +1,7 @@
 function solve(arr, rotationsCount) {
     let resultArr = [];
-    if(rotationsCount>arr.length){
-        rotationsCount=rotationsCount%arr.length;
+    if (rotationsCount > arr.length) {
+        rotationsCount = rotationsCount % arr.length;
     }
     for (let index = rotationsCount; index < arr.length; index++) {
         resultArr.push(arr[index]);
@@ -12,6 +12,4 @@ function solve(arr, rotationsCount) {
     console.log(resultArr.join(" "));
 }
 solve([2, 4, 15, 31],
-    5
-    
-)
+    5)

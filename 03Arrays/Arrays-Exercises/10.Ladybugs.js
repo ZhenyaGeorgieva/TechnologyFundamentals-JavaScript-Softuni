@@ -6,7 +6,6 @@ function solve(input) {
 
     for (let i = 0; i < occupiedIndexes.length; i++) {
         let currentIndex = Number(occupiedIndexes[i]);
-
         if (currentIndex >= 0 && currentIndex < fieldSize) {
             ladybugField[currentIndex] = 1;
         }
@@ -17,7 +16,6 @@ function solve(input) {
         }
     }
     for (let index = 0; index < input.length; index++) {
-
         let command = input[index].split(" ");
         let isFirst = true;
         let currentIndex = Number(command[0]);
@@ -31,7 +29,6 @@ function solve(input) {
 
             let direction = command[1];
             let flightLength = Number(command[2]);
-
             if (direction == "left") {
                 currentIndex -= flightLength;
 
@@ -43,7 +40,6 @@ function solve(input) {
                 }
             } else {
                 currentIndex += flightLength;
-
                 if (currentIndex >= 0 && currentIndex < fieldSize) {
                     if (ladybugField[currentIndex] == 0) {
                         ladybugField[currentIndex] = 1;
@@ -51,11 +47,11 @@ function solve(input) {
                     }
                 }
             }
-        } 
+        }
     }
     console.log(ladybugField.join(" "));
 }
-    solve([ 5, '3',
+solve([5,
+    '3',
     '3 left 2',
-    '1 left -2']  
-    )
+    '1 left -2'])

@@ -16,13 +16,12 @@ function solve(arr) {
             console.log(index);
             found = true;
             break;
-        }
-        else {
+        } else {
             leftSum = 0;
             rightSum = 0;
         }
     }
-    if(!found){
+    if (!found) {
         console.log("no")
     }
 }
