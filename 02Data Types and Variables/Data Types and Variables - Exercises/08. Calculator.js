@@ -1,13 +1,16 @@
-function solve(a,operator,b){
+function solve(a, operator, b) {
     let result;
-    if(operator=="+"){
-        result=a+b;
-    }else if(operator=="-"){
-        result=a-b;
-    }else if(operator=="/"){
-         result=a/b;
-    }else if(operator=="*"){
-        result=a*b;
+    if (operator == "+") {
+        result = a + b;
+    } else if (operator == "-") {
+        result = a - b;
+    } else if (operator == "/") {
+        result = a / b;
+    } else if (operator == "*") {
+        result = a * b;
     }
     console.log(`${result.toFixed(2)}`);
 }
+solve(5,
+    "+",
+    10)

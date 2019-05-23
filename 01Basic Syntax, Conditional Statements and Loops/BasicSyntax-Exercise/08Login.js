@@ -12,10 +12,10 @@ function solve(input) {
         if (incorrectLogs >= 4) {
             console.log(`User ${user} blocked!`);
             break;
-        }
-        else {
+        } else {
             console.log(`Incorrect password. Try again.`);
         }
         command = input.shift();
     }
 }
+solve(['Acer', 'login', 'go', 'let me in', 'recA'])

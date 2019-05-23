@@ -3,6 +3,7 @@ function rounding(number, precisionNumber) {
         precisionNumber = 15;
     }
     let printNumber = number.toFixed(precisionNumber);
-    printNumber=parseFloat(printNumber)
+    printNumber = parseFloat(printNumber)
     console.log(printNumber);
 }
+rounding(3.1415926535897932384626433832795, 2)

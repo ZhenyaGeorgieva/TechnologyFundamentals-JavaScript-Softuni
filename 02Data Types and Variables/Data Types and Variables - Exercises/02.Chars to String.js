@@ -1,5 +1,5 @@
-function solve(a,b,c){
-    
-    let print=a+b+c;
-    console.log(print)
+function solve(input1, input2, input3) {
+    let print = input1 + input2 + input3;
+    console.log(print);
 }
+solve('a','b','c')

@@ -7,3 +7,4 @@ function solve(number) {
         console.log(numberToPrintString);
     }
 }
+solve(3)

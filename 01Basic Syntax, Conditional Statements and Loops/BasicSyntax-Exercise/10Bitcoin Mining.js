@@ -7,7 +7,7 @@ function solve(input) {
     for (let index = 0; index < length; index++) {
         let currentDay = index + 1;
         let currentGold = Number(input[index]);
-        if ((index+1) % 3 == 0) {
+        if ((index + 1) % 3 == 0) {
             currentGold *= 0.7;
         }
         let currentMoney = currentGold * 67.51;
@@ -22,8 +22,9 @@ function solve(input) {
         }
     }
     console.log(`Bought bitcoins: ${bitcoinsBought}`);
-    if(bitcoinsBought>0){
+    if (bitcoinsBought > 0) {
         console.log(`Day of the first purchased bitcoin: ${dayOfFirstBitcoin}`)
     }
     console.log(`Left money: ${totalMoney.toFixed(2)} lv.`)
 }
+solve([50, 100])
